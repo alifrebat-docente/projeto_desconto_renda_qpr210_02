@@ -1,7 +1,10 @@
 #geral{
     width: 500px;
     min-height: 600px;
-    margin: 20px auto; 
+    margin: 20px auto;
+    border: solid 1px #718282; 
+    padding: 25px;
+    border-radius: 8px;
 }
 
 h3{
