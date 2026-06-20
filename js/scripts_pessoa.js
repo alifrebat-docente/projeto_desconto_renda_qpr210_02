@@ -1,3 +1,4 @@
+import {calculoDesconto} from './script_calculos.js'
 
 //CRIAR UM ARRAY DE OBJETOS PESSOA
 const pessoas = []
@@ -45,7 +46,7 @@ const listPessoa = () => {
     
     //PERCORRENDO O ARRAY COM A ESTRUTURA DE REPETIÇÃO foreach
     pessoas.forEach((elem, i)=>{
-        divPessoa.innerHTML += `<div class='item-pessoa'> ${ i + 1} - ${elem.nome} ${elem.idade} R$ ${parseFloat(elem.renda).toFixed(2).replace('.',',')} </div>`
+        divPessoa.innerHTML += `<div class='item-pessoa'> ${ i + 1} - ${elem.nome} ${elem.idade} R$ ${parseFloat(elem.renda).toFixed(2).replace('.',',')} ${calculoDesconto(elem)} </div>`
     })
 }
 
