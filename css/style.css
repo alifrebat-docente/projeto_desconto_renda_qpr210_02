@@ -46,3 +46,9 @@ button{
     border-radius: 5px;
     padding: 25px;
 }
+
+.item-pessoa{
+    margin: 20px 0px;
+    padding: 5px;
+    background-color: #ffffff;
+}
